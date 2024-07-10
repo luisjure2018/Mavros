@@ -12,8 +12,8 @@ body {
 
 #blason-container {
     position: relative;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,15 +23,19 @@ body {
     width: 50%;
     height: auto;
     position: absolute;
+    top: 0;
+    bottom: 0;
     cursor: pointer;
 }
 
 #blason-izq {
     left: 0;
+    transform-origin: right center;
 }
 
 #blason-der {
     right: 0;
+    transform-origin: left center;
 }
 
 #contenido {
@@ -96,12 +100,12 @@ header h1 {
 
 @keyframes slideLeft {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    100% { transform: translateX(-100%) scale(0.5); }
 }
 
 @keyframes slideRight {
     0% { transform: translateX(0); }
-    100% { transform: translateX(100%); }
+    100% { transform: translateX(100%) scale(0.5); }
 }
 
 .animate-left {
