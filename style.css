@@ -12,8 +12,8 @@ body {
 
 #blason-container {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,10 +21,9 @@ body {
 
 #blason-izq, #blason-der {
     width: 50%;
-    height: auto;
+    height: 100%;
     position: absolute;
     top: 0;
-    bottom: 0;
     cursor: pointer;
 }
 
@@ -115,4 +114,3 @@ header h1 {
 .animate-right {
     animation: slideRight 1s forwards;
 }
-
