@@ -111,9 +111,3 @@ header h1 {
 .animate-right {
     animation: slideRight 1s forwards;
 }
-
-
-#titulo-episodio {
-    text-align: center;
-    margin-bottom: 20px;
-}
