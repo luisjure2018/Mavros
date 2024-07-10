@@ -38,3 +38,13 @@ function obtenerContenidoEpisodio(numero) {
         case '4':
             return '<p>Contenido del Episodio 4...</p>';
         case '5':
+            return '<p>Contenido del Episodio 5...</p>';
+        case '6':
+            return '<p>Contenido del Episodio 6...</p>';
+        case '7':
+            return '<p>Contenido del Episodio 7...</p>';
+        default:
+            return '<p>Contenido no disponible.</p>';
+    }
+}
+
