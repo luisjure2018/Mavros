@@ -22,8 +22,8 @@ body {
 #blason-izq, #blason-der {
     width: auto;
     height: auto;
-    max-width: 45%;  /* Ajusta el porcentaje según sea necesario */
-    max-height: 45%;  /* Ajusta el porcentaje según sea necesario */
+    max-width: 100%;
+    max-height:100%; 
     position: absolute;
     cursor: pointer;
 }
