@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('img/fondo.jpg');
+    background-image: url('img/fondo0.jpg');
     background-size: cover;
     margin: 0;
     display: flex;
@@ -21,7 +21,7 @@ body {
 
 #blason-izq, #blason-der {
     width: 50%;
-    height: 100%;
+    height: 50%;
     position: absolute;
     top: 0;
     cursor: pointer;
