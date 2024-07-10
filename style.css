@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('img/fondo0.jpg');
+    background-image: url('img/fondo.jpg');
     background-size: cover;
     margin: 0;
     display: flex;
@@ -12,22 +12,19 @@ body {
 
 #blason-container {
     position: relative;
-    width: 100%;
-    height: 100%;
-    width: 50%;
-    height: 50%;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #blason-izq, #blason-der {
-    width: 50%;
+    width: auto;
     height: auto;
-    height: 100%;
+    max-width: 45%;  /* Ajusta el porcentaje según sea necesario */
+    max-height: 45%;  /* Ajusta el porcentaje según sea necesario */
     position: absolute;
-    top: 0;
-    bottom: 0;
     cursor: pointer;
 }
 
@@ -116,5 +113,8 @@ header h1 {
 }
 
 .animate-right {
+    animation: slideRight 1s forwards;
+}
+
     animation: slideRight 1s forwards;
 }
