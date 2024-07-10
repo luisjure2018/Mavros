@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('img/fondo0.jpg');
+    background-image: url('../img/fondo0.jpg');
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -30,14 +30,15 @@ header h1 {
     margin-bottom: 20px;
 }
 
-.perfil img {
-    width: 150px;
+.imagen-personaje {
+    width: 100px; /* Ajuste de tamaño */
     height: auto;
     margin-right: 20px;
 }
 
 .descripcion {
     flex: 1;
+    text-align: justify;
 }
 
 .botones-episodios {
@@ -64,6 +65,12 @@ header h1 {
 #contenido-episodio {
     margin-top: 20px;
 }
+
+#titulo-episodio {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 
 #titulo-episodio {
     text-align: center;
