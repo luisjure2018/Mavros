@@ -1,18 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Proyecto</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de Mavros</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Mi Proyecto</h1>
-    </header>
-    <main>
-        <p>Este es un ejemplo de sitio web alojado en GitHub Pages.</p>
-        <img src="images/example.jpg" alt="Ejemplo de imagen">
-    </main>
-    <script src="script.js"></script>
+    <div id="blason-container">
+        <img src="img/blason.jpg" id="blason" alt="Blasón de la casa Blackmont">
+    </div>
+    <div id="contenido" style="display:none;">
+        <header>
+            <h1>Mavros</h1>
+        </header>
+        <div class="perfil">
+            <img src="img/personaje.jpg" alt="Mavros">
+            <div class="descripcion">
+                <p>Aquí va una breve descripción del personaje.</p>
+            </div>
+        </div>
+        <div class="botones-episodios">
+            <!-- Botones para episodios -->
+            <button onclick="mostrarEpisodio(1)">Episodio 1</button>
+            <button onclick="mostrarEpisodio(2)">Episodio 2</button>
+            <!-- Añadir más botones según sea necesario -->
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
