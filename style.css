@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'HouseOfTheDragon';
-    src: url('font/HouseOfTheDragon_PERSONAL_USE_ONLY.otf') format('opentype');
+    src: url('font/HouseOfTheDragonDeco_PERSONAL_USE_ONLY.otf') format('opentype');
 }
 
 header h1 {
@@ -97,11 +97,18 @@ body {
     align-items: center;
 }
 
-#contenido-episodio {
-    margin-top: 20px;
-    background: rgba(255, 255, 255, 0.6);  /* Fondo blanco con transparencia */
-    padding: 10px;
-    border-radius: 5px;
+.return-btn {
+    width: 100px;
+    height: 100px;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #titulo-episodio {
