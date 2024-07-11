@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'HouseOfTheDragon';
+    src: url('font/HouseOfTheDragonDeco_PERSONAL_USE_ONLY.otf') format('opentype');
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'HouseOfTheDragon', serif;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -36,6 +46,7 @@ body {
 }
 
 #contenido {
+    background-image: url('img/fondo0.jpg');
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -44,10 +55,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     overflow-y: auto;
-}
-
-header h1 {
-    text-align: center;
 }
 
 .perfil {
@@ -64,7 +71,7 @@ header h1 {
 
 .descripcion {
     flex: 1;
-    background: rgba(255, 255, 255, 0.8);  /* Fondo blanco transparentado */
+    background: rgba(255, 255, 255, 0.6);  /* Fondo blanco con transparencia */
     padding: 10px;
     border-radius: 5px;
 }
@@ -92,7 +99,7 @@ header h1 {
 
 #contenido-episodio {
     margin-top: 20px;
-    background: rgba(255, 255, 255, 0.8);  /* Fondo blanco transparentado */
+    background: rgba(255, 255, 255, 0.6);  /* Fondo blanco con transparencia */
     padding: 10px;
     border-radius: 5px;
 }
