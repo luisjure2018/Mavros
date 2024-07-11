@@ -13,12 +13,12 @@
     </div>
     <div id="contenido" style="display:none;">
         <header>
-            <h1 id="titulo-personaje">Mavros</h1>
+            <h1 id="titulo-personaje">Mavros</h1> <!-- Nombre del personaje -->
         </header>
         <div class="perfil">
             <img src="img/personaje.jpg" alt="Mavros">
-            <div class="descripcion">
-                <p>Aquí va una breve descripción del personaje.</p>
+            <div class="descripcion" id="descripcion">
+                <p><!-- Aquí va la breve descripción del personaje. --></p>
             </div>
         </div>
         <div class="botones-episodios">
@@ -29,14 +29,10 @@
             <button class="episodio-btn" data-episodio="5" style="background-image: url('img/episodio5.jpg');">Episodio 5</button>
             <button class="episodio-btn" data-episodio="6" style="background-image: url('img/episodio6.jpg');">Episodio 6</button>
             <button class="episodio-btn" data-episodio="7" style="background-image: url('img/episodio7.jpg');">Episodio 7</button>
-        </div>
-        <div id="contenido-episodio" style="display:none;">
-            <h2 id="titulo-episodio"></h2>
-            <div id="texto-episodio">
-                <!-- Aquí va el contenido del episodio -->
-            </div>
+            <button class="return-btn" id="return-btn">Return</button> <!-- Botón para volver al estado original -->
         </div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+
