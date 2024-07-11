@@ -19,7 +19,7 @@ document.querySelectorAll('.episodio-btn').forEach(function(button) {
 });
 
 function cambiarEpisodio(numero) {
-    document.body.style.backgroundImage = `url('img/fondo${numero}.jpg')`;
+    document.getElementById('contenido').style.backgroundImage = `url('img/fondo${numero}.jpg')`;
     document.getElementById('titulo-personaje').style.display = 'none';
     document.getElementById('contenido-episodio').style.display = 'block';
     document.getElementById('titulo-episodio').textContent = 'Episodio ' + numero;
