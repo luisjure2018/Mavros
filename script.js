@@ -30,6 +30,7 @@ document.getElementById('return-btn').addEventListener('click', function() {
 
 // Cambia el contenido del cuadro de texto según el episodio seleccionado
 function cambiarEpisodio(numero) {
+    // Cambiar el fondo según el episodio
     document.getElementById('contenido').style.backgroundImage = `url('img/fondo${numero}.jpg')`;
     document.getElementById('titulo-personaje').style.display = 'none';
     var contenido = obtenerContenidoEpisodio(numero);
@@ -53,7 +54,12 @@ function obtenerContenidoEpisodio(numero) {
             return '<p>Contenido del Episodio 6...</p>';
         case '7':
             return '<p>Contenido del Episodio 7...</p>';
+        case '8':
+            return '<p>Contenido del Episodio 8...</p>';
+        case '9':
+            return '<p>Contenido del Episodio 9...</p>';
         default:
             return '<p>Contenido no disponible.</p>';
     }
 }
+
