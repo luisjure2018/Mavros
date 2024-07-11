@@ -36,7 +36,6 @@ body {
 }
 
 #contenido {
-    background-image: url('img/fondo0.jpg');
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -65,6 +64,9 @@ header h1 {
 
 .descripcion {
     flex: 1;
+    background: rgba(255, 255, 255, 0.8);  /* Fondo blanco transparentado */
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .botones-episodios {
@@ -90,6 +92,9 @@ header h1 {
 
 #contenido-episodio {
     margin-top: 20px;
+    background: rgba(255, 255, 255, 0.8);  /* Fondo blanco transparentado */
+    padding: 10px;
+    border-radius: 5px;
 }
 
 #titulo-episodio {
