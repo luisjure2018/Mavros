@@ -18,19 +18,29 @@ document.querySelectorAll('.episodio-btn').forEach(function(button) {
     });
 });
 
+document.getElementById('return-btn').addEventListener('click', function() {
+    document.getElementById('contenido').style.backgroundImage = "url('img/fondo0.jpg')";
+    document.getElementById('titulo-personaje').style.display = 'block';
+    document.getElementById('descripcion').innerHTML = `
+        <p>
+            <!-- Aquí va la breve descripción del personaje. -->
+        </p>
+    `;
+});
+
+// Cambia el contenido del cuadro de texto según el episodio seleccionado
 function cambiarEpisodio(numero) {
     document.getElementById('contenido').style.backgroundImage = `url('img/fondo${numero}.jpg')`;
     document.getElementById('titulo-personaje').style.display = 'none';
-    document.getElementById('contenido-episodio').style.display = 'block';
-    document.getElementById('titulo-episodio').textContent = 'Episodio ' + numero;
     var contenido = obtenerContenidoEpisodio(numero);
-    document.getElementById('texto-episodio').innerHTML = contenido;
+    document.getElementById('descripcion').innerHTML = contenido;
 }
 
+// Contenido de cada episodio
 function obtenerContenidoEpisodio(numero) {
     switch(numero) {
         case '1':
-            return '<p>Contenido del Episodio 1...</p>';
+            return '<p>Contenido del Episodio 1: Un Encargo Imprevisto...</p>';
         case '2':
             return '<p>Contenido del Episodio 2...</p>';
         case '3':
@@ -47,4 +57,3 @@ function obtenerContenidoEpisodio(numero) {
             return '<p>Contenido no disponible.</p>';
     }
 }
-
