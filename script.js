@@ -1,49 +1,128 @@
-document.getElementById('blason-izq').addEventListener('click', iniciarAnimacion);
-document.getElementById('blason-der').addEventListener('click', iniciarAnimacion);
-
-function iniciarAnimacion() {
-    document.getElementById('blason-izq').classList.add('animate-left');
-    document.getElementById('blason-der').classList.add('animate-right');
-
-    setTimeout(function() {
-        document.getElementById('blason-container').style.display = 'none';
-        document.getElementById('contenido').style.display = 'block';
-    }, 1000);
+@font-face {
+    font-family: 'HouseOfTheDragon';
+    src: url('font/HouseOfTheDragonDeco_PERSONAL_USE_ONLY.otf') format('opentype');
 }
 
-document.querySelectorAll('.episodio-btn').forEach(function(button) {
-    button.addEventListener('click', function() {
-        var episodio = button.getAttribute('data-episodio');
-        cambiarEpisodio(episodio);
-    });
-});
-
-function cambiarEpisodio(numero) {
-    document.getElementById('contenido').style.backgroundImage = `url('img/fondo${numero}.jpg')`;
-    document.getElementById('titulo-personaje').style.display = 'none';
-    document.getElementById('contenido-episodio').style.display = 'block';
-    document.getElementById('titulo-episodio').textContent = 'Episodio ' + numero;
-    var contenido = obtenerContenidoEpisodio(numero);
-    document.getElementById('texto-episodio').innerHTML = contenido;
+header h1 {
+    text-align: center;
+    font-family: 'HouseOfTheDragon', serif;
 }
 
-function obtenerContenidoEpisodio(numero) {
-    switch(numero) {
-        case '1':
-            return '<p>Contenido del Episodio 1...</p>';
-        case '2':
-            return '<p>Contenido del Episodio 2...</p>';
-        case '3':
-            return '<p>Contenido del Episodio 3...</p>';
-        case '4':
-            return '<p>Contenido del Episodio 4...</p>';
-        case '5':
-            return '<p>Contenido del Episodio 5...</p>';
-        case '6':
-            return '<p>Contenido del Episodio 6...</p>';
-        case '7':
-            return '<p>Contenido del Episodio 7...</p>';
-        default:
-            return '<p>Contenido no disponible.</p>';
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#blason-container {
+    position: relative;
+    width: 300px;  /* Ajusta según sea necesario para que sea cuadrado */
+    height: 300px; /* Ajusta según sea necesario para que sea cuadrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blason-izq, #blason-der {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+#blason-izq {
+    left: 0;
+    transform-origin: right center;
+}
+
+#blason-der {
+    right: 0;
+    transform-origin: left center;
+}
+
+#contenido {
+    background-image: url('img/fondo0.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    width: 60%;
+    height: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    overflow-y: auto;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.perfil img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.descripcion {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.6);  /* Fondo blanco con transparencia */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.botones-episodios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.episodio-btn {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenido-episodio {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.6);  /* Fondo blanco con transparencia */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#titulo-episodio {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@keyframes slideLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%) scale(0.5); }
+}
+
+@keyframes slideRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%) scale(0.5); }
+}
+
+.animate-left {
+    animation: slideLeft 1s forwards;
+}
+
+.animate-right {
+    animation: slideRight 1s forwards;
 }
