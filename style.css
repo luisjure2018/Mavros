@@ -69,9 +69,7 @@ body {
 }
 
 .perfil img {
-    width: 150px;
-    height: auto;
-    margin-right: 20px;
+    display: none; /* Elimina la imagen */
 }
 
 .descripcion {
@@ -79,6 +77,9 @@ body {
     background: rgba(255, 255, 255, 0.6);  /* Fondo blanco con transparencia */
     padding: 10px;
     border-radius: 5px;
+    width: 100%;
+    height: 300px; /* Tamaño fijo */
+    overflow-y: auto; /* Barra de scroll si es necesario */
 }
 
 .botones-episodios {
@@ -101,8 +102,9 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    transition: color 0.3s; /* Transición suave para el cambio de color */
+    transition: color 0.3s, border-radius 0.3s; /* Transición suave para el cambio de color y bordes */
     font-family: 'FuenteBoton', sans-serif; /* Aplica la fuente personalizada */
+    border-radius: 10px; /* Bordes suavizados */
 }
 
 .episodio-btn:hover {
@@ -117,7 +119,7 @@ body {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    border-radius: 5px;
+    border-radius: 10px;
     z-index: 1;
 }
 
@@ -134,11 +136,13 @@ body {
     border: none;
     margin: 10px;
     cursor: pointer;
+    border-radius: 10px; /* Bordes suavizados */
 }
 
 #titulo-episodio {
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'HouseOfTheDragon', serif;
 }
 
 @keyframes slideLeft {
