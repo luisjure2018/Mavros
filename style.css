@@ -100,15 +100,11 @@ body {
 .return-btn {
     width: 100px;
     height: 100px;
-    background-color: #ffcc00;
-    color: black;
+    background: url('img/return.png') no-repeat center center;  /* Usa la imagen PNG para el botón */
+    background-size: contain;
     border: none;
     margin: 10px;
     cursor: pointer;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #titulo-episodio {
