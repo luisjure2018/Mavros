@@ -41,31 +41,7 @@ function cambiarEpisodio(numero) {
 function obtenerContenidoEpisodio(numero) {
     switch(numero) {
         case '1':
-            return '<p>El sol de la tarde se filtraba a través de las altas ventanas del salón en Lanza del Sol, llenando el aire con un brillo dorado. Aderyn y Mavros Blackmont, de visita en la fortaleza de la Casa Martell, disfrutaban de la hospitalidad de sus anfitriones y aprovechaban para entrenar en el arte de la espada. Aderyn, tres años mayor que su hermano, movía su espada de madera con una destreza que evidenciaba su experiencia. Mavros, aunque más joven, mostraba una tenacidad y un ímpetu que lo impulsaban a seguir el ritmo de su hermano.
-
-De repente, un sirviente entró en la sala, interrumpiendo el entrenamiento. Se inclinó profundamente y entregó una carta sellada con el emblema de la Casa Blackmont. Aderyn detuvo su ataque y tomó la carta, sus cejas frunciéndose al reconocer el sello. Mavros, siempre curioso, se acercó para mirar por encima del hombro de su hermano.
-
-"Es de nuestro padre," dijo Aderyn, rompiendo el sello con cuidado. "Tiene instrucciones para ambos."
-
-Aderyn desplegó la carta y comenzó a leer en voz alta. "Aderyn, debes permanecer en Lanza del Sol. Es vital que fortalezcas nuestros lazos con la Casa Martell y perfecciones tus habilidades como escudero aquí."
-
-Mavros asintió, sin sorprenderse. Sabía que su hermano mayor estaba destinado a grandes cosas en Dorne. Sin embargo, la sorpresa llegó cuando Aderyn continuó leyendo.
-
-"Mavros," continuó, "tú debes dirigirte a Essos. Tienes tres misiones que cumplir. Primero, entregarás un paquete a un viejo conocido mío en Tyrosh. Segundo, debes negociar mejores términos para un préstamo con el Banco de Hierro de Braavos. Y tercero..." Aderyn hizo una pausa, frunciendo el ceño como si estuviera leyendo algo desconcertante. "Debes averiguar la receta de un postre famoso en Essos."
-
-Mavros parpadeó, sorprendido. "¿La receta de un postre? ¿Está bromeando?"
-
-Aderyn mantuvo una expresión seria, ocultando su traviesa satisfacción. "Eso es lo que dice. Padre siempre tiene sus razones."
-
-Mavros rascó su barbilla, tratando de entender la lógica detrás de estas misiones. "Essos... nunca pensé que viajaría tan lejos tan pronto. Pero, ¿un postre? ¿Qué tipo de misión es esa?"
-
-Aderyn enrolló la carta y la guardó con cuidado. "Quizás es una prueba de tu capacidad para adaptarte y aprender. Essos es un lugar lleno de desafíos y oportunidades. Debes estar alerta en todo momento."
-
-Mavros asintió, su expresión endureciéndose con determinación. "No te preocupes por mí. Cumpliré con estas misiones y regresaré más fuerte. Y quién sabe, tal vez incluso traiga de vuelta un delicioso postre."
-
-Aderyn sonrió ligeramente y puso una mano en el hombro de su hermano menor. "Sé que lo harás. Y recuerda, siempre puedes confiar en tu ingenio y tu fuerza. La Casa Blackmont se enorgullece de ti."
-
-Con una última mirada a su hermano, Mavros se dirigió hacia sus aposentos para prepararse para el viaje. Sabía que su vida estaba a punto de cambiar drásticamente, pero la sangre de los Blackmont corría por sus venas, y estaba listo para enfrentar cualquier desafío que Essos le presentara.</p>';
+             return '<p>Contenido del Episodio 1: Un Encargo Imprevisto...</p>';
         case '2':
             return '<p>Contenido del Episodio 2...</p>';
         case '3':
