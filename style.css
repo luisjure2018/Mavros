@@ -95,12 +95,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s, color 0.3s; /* Transición suave para el cambio de color */
+    position: relative;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
 }
 
 .episodio-btn:hover {
-    background-color: black; /* Fondo negro al pasar el mouse */
     color: white; /* Texto blanco al pasar el mouse */
+}
+
+.episodio-btn:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.episodio-btn span {
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté por encima del fondo semitransparente */
 }
 
 .return-btn {
