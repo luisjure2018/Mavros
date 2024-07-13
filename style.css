@@ -3,6 +3,11 @@
     src: url('font/HouseOfTheDragonDeco_PERSONAL_USE_ONLY.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'FuenteBoton';
+    src: url('font/fuente_boton.TTF') format('truetype');
+}
+
 header h1 {
     text-align: center;
     font-family: 'HouseOfTheDragon', serif;
@@ -97,6 +102,7 @@ body {
     align-items: center;
     position: relative;
     transition: color 0.3s; /* Transición suave para el cambio de color */
+    font-family: 'FuenteBoton', sans-serif; /* Aplica la fuente personalizada */
 }
 
 .episodio-btn:hover {
